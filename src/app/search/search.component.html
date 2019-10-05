@@ -1,0 +1,10 @@
+<body>
+<h1>Search</h1><br>
+<form [formGroup]="search">
+    <mat-form-field>
+        <mat-label>Model No</mat-label>
+        <input matInput formControlName = "modelNo">
+    </mat-form-field>
+    <br><br>
+    <button type="button" color="danger" mat-raised-button (click)="Submit(search.value)">Sumit</button>&nbsp;
+</form>

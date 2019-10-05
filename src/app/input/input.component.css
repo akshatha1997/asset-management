@@ -1,0 +1,10 @@
+body{
+    text-align: center;
+    padding-top:5px;
+}
+div{
+    
+    border: gray 1px ;
+    margin: 3% 30%;
+    box-shadow: 5px 5px 5px 5px #888888;
+}

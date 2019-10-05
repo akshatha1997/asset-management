@@ -1,0 +1,41 @@
+<body>
+    <div>
+    <h1>ASSET MANAGEMENT</h1>
+    <br><br>
+    <form [formGroup]="assetmanage">
+        <mat-form-field>
+        <mat-label>Serial No</mat-label>
+        <input matInput formControlName = "serialNo">
+        </mat-form-field>
+      <br>
+        <mat-form-field>
+        <mat-label>Type</mat-label>
+        <input matInput formControlName = "type">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Model No</mat-label>
+            <input matInput formControlName = "modelNo">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Manufacturing Date</mat-label>
+            <input matInput formControlName = "manufacturingDate">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Assigned To</mat-label>
+            <input matInput formControlName = "assignedTo">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Assigned Date</mat-label>
+            <input matInput formControlName = "assignedDate">
+        </mat-form-field>
+      <br><br>
+      <button type="button" color="primary" mat-raised-button (click)="Submit(assetmanage.value)">Sumit</button>&nbsp;
+      <button type="button" color="primary" mat-raised-button (click)="next()">Next</button>
+      <br><br>
+    </form>
+    </div>
+</body>

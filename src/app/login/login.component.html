@@ -1,0 +1,20 @@
+<body>
+    <div>
+    <h1>Login Form</h1>
+    <br><br>
+    <form [formGroup]="login">
+        <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput formControlName = "email">
+        </mat-form-field>
+      <br><br>
+        <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input type="password" matInput formControlName = "password">
+        </mat-form-field>
+      <br><br>
+      <button mat-raised-button type="button" (click)="doLogin(login.value)">Login</button>
+      <br><br><br>
+    </form>
+    </div>
+</body>
